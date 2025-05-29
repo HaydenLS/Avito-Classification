@@ -1,0 +1,8 @@
+venv/
+**/__pychache__
+__pycache__/
+*.egg-info
+
+dataset/
+app/all weights/
+app/checkpoints/
