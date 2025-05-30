@@ -35,14 +35,13 @@ def get_model(out_channels):
     return model_resnet
 
 
-def load_model(out_channels, path='trainded_models/model_resnet.pt'):
+def load_model(out_channels, path=r'app\\models\\trained_models\\model_resnet34.pt'):
     model = get_model(out_channels)
 
     checkpoint = torch.load(path, map_location=DEVICE)
     model.load_state_dict(checkpoint["model_state_dict"])
     
     return model
-
 
 
 def save_model():

@@ -6,3 +6,5 @@ __pycache__/
 dataset/
 app/all weights/
 app/checkpoints/
+checkpoints/
+app/models/trained_models/
